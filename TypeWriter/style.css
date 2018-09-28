@@ -1,0 +1,83 @@
+/*
+CSS Flexbox is a layout module that provides a more efficient way to layout, align
+and distribute space amongst items.
+*/
+
+/* The following imports a particular font from Google called Raleway */
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
+body{
+	font-family: 'Raleway', sans-serif;
+	/* 100vh means it will always take up the entire size regardless of browser size */
+	height: 100vh;
+	background: #333 url('showcase.jpeg') no-repeat center center / cover;
+	/* text colour is light gre */
+	color: #ccc;
+	overflow: hidden;
+}
+
+
+.container {
+	/* displayed as flexbox */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	padding: 0 3rem;
+}
+
+
+h1, h2 {
+	font-weight: 200;
+	margin: 0.4rem;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2{
+	font-size: 2rem;
+	color: #aaa;
+}
+
+/* Including the cursor */
+.txt-type > .txt {
+	border-right: 0.2rem solid #777;
+}
+
+/*
+ The following media queries adjusts the size of the various elements
+ depending on the size of the browser screen. Making the text responsive.
+*/
+
+@media(min-width: 1200px){
+	h1{
+		font-size: 5rem;
+	}
+}
+
+@media(max-width: 800px){
+	.container{
+		padding: 0 1rem;
+	}
+
+	h1{
+		font-size: 3rem;
+	}
+}
+
+
+@media(max-width: 500px){
+	h1{
+		font-size: 2.5rem;
+	}
+	h2{
+		font-size: 1.5rem;
+	}
+}
+
+
+
+
+

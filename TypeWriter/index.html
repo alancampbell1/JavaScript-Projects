@@ -1,0 +1,31 @@
+<!--
+
+The HTML is very basic for this project. 
+The main tag to focus on is the span tag in the container div tag.
+With HTML 5 we can add custom data attributes and then access them in the JavaScript.
+data-wait is set to 3000 milliseconds which is the wait period after the custom
+attribute is printed.
+data-words will be passed as a String but our JavaScript will use JSON.parse to access
+each word as an element in an Array. 
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to my site</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Alan Campbell The
+			<span class="txt-type" data-wait="3000" data-words='["Developer", "Designer", "Creator"]'></span>
+		</h1>
+		<h2>
+			Welcome to my Website
+		</h2>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
