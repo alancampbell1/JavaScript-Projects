@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/Style.css">
+    <script type="text/javascript" src="/js/tableFunctions.js"></script>
+    <h1 style="text-align: center;">This is a table for assigment 2</h1>
+</head>
+<body>
+<table id="myTable" class="myTable" width="1000" height = "100">
+  <tr>
+    <th class="tableHeading" id = "0" onclick="highlightCol(this);">Student Name</th>
+    <th class="tableHeading" id = "1" onclick="highlightCol(this);">Student ID</th>
+    <th class="tableHeading" id="-2" onclick="highlightCol(this);">Assignment 1</th>
+    <th class="tableHeading">Final Grade</th>
+  </tr>
+  <tr>
+    <td class="leftAlignedCells" contenteditable='true' id = "1" onclick="highlightRow(this)">Alan Campbell</td>
+    <td class="leftAlignedCells" contenteditable='true'>10346239</td>
+    <td class="rightAlignedCells" contenteditable='true'>-</td>
+    <td class="rightAlignedCells" >-</td>
+  </tr> 
+</table>
+        
+        <div align="center">
+        	<br>
+        	<button class="btn" class="inline" onclick="myFinalScoreCal();">Get Final Grades</button>
+            <button class="btn" class="inline" onclick="createNewRow()">Create New Row</button>
+            <button class="btn" class="inline" onclick="createNewCol()">Create New Column</button>
+            <button class="btn" class="inline" onclick="makeCookie()">Create Cookie</button>
+            <button class="btn" class="inline" onclick="getCookie()">Load Cookie</button>
+            <button class="btn" class="inline" onclick="deleteCookie()">Delete Cookie</button>
+        </div>
+
+        <div align="center">
+        	<br>
+        	<button class="btn" class="inline" onclick="deleteHighlightRows()">Delete Highlighted Row</button>
+            <button class="btn" class="inline" onclick="deleteHighlightedColumns()">Delete Highlighted Col</button>
+            <button class="btn" id = "myBtn1" disabled= "true" onclick="reloadRowBackIntoTable()">Un-delete Row</button>
+            <button class="btn" id = "myBtn2" disabled= "true" onclick="reloadColumnBackIntoTable()">Un-delete Col</button>
+        </div>
+</body>
+</html>
