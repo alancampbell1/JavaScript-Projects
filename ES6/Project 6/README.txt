@@ -1,0 +1,1 @@
+This project focuses on Default Parameters in ES6 and the Spread Operator.

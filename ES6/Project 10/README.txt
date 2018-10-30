@@ -1,0 +1,2 @@
+This project will look at Generators in ES6. Generators are functions in JavaScript that can be paused and then resumed as many times as we like.
+At each pause it can yield a value back, similar to return.  

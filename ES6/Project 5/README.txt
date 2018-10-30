@@ -1,0 +1,2 @@
+This project will look at the new String features/methods in ES6. These are used to target expressions inside of a String. 
+This project will also detail some of the number methods/features new to ES6.
