@@ -3,6 +3,37 @@
 //bringing in the function we are concerned with
 const functions = require('./functions');
 
+/*
+//in-built functions to run specific functions before and after each test
+//beforeEach(() => initDatabase());
+//afterEach(() => closedDatabase());
+
+//to run specific functions only once before and after all tests
+beforeAll(() => initDatabase());
+afterAll(() => closedDatabase());
+
+
+//Dumbie functions to run before and after each test
+const initDatabase = () => console.log('Database initialised');
+const closedDatabase = () => console.log('Database closed');
+*/
+
+//This only runs at a specific time
+const nameCheck = () => console.log('Checking name...');
+describe('Checking Names', () => {
+	beforeEach(() => nameCheck());
+
+	test('User is Alan', () => {
+		const user = 'Alan';
+		expect(user).toBe('Alan');
+	});
+
+	test('User is Niall', () => {
+		const user = 'Niall';
+		expect(user).toBe('Niall');
+	});
+});
+
 //Pass in a description, then a function
 test('Adds 2 + 2 to equal 4', () => {
 	//in expect is where you put your function with any parameters
